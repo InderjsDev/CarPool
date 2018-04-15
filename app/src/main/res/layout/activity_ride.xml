@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.inderjs.pool.carpool.RideActivity">
+
+   <ImageView
+       android:layout_width="60dp"
+       android:layout_height="60dp"
+       android:layout_marginTop="20dp"
+       android:layout_centerHorizontal="true"
+       android:background="@drawable/man"
+       android:id="@+id/imageView" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"
+        android:id="@+id/cardView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#696868"
+                android:layout_gravity="center_vertical"
+                android:textAlignment="center"
+                android:text="Driver Name : Rohit Singh"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#696868"
+                android:layout_gravity="center_vertical"
+                android:textAlignment="center"
+                android:text="Car NO. : DL AB XXXX"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="Car Type : SUV"
+                android:textAlignment="center"
+                android:textColor="#696868" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="Wifi : Available"
+                android:textAlignment="center"
+                android:textColor="#696868" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/cardView2">
+
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/man" />
+
+
+        <LinearLayout
+            android:layout_width="302dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="80dp"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gaurav Sharma"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Will reach destination in 5 min."
+                android:gravity="center"
+                android:layout_weight="1"/>
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/cardView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/man" />
+
+
+        <LinearLayout
+            android:layout_width="302dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="80dp"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calculating estimated time..."
+                android:gravity="center"
+                android:layout_weight="1"/>
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You are travelling with 1 more passenger"
+        android:layout_below="@+id/cardView"
+        android:textColor="#3262ac"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:id="@+id/textView" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="End Ride"
+        android:id="@+id/endBtn"
+        android:background="#7bade2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
